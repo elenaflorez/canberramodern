@@ -19,3 +19,8 @@
 <script>
 
 </script>
+
+<!--You can put whatever you want down here to affect the styling of the nav-->
+<style>
+  
+</style>
