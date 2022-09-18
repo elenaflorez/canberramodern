@@ -34,7 +34,31 @@ export default {
 </script>
 
 <style>
-	.bannerContainer {
+* {
+	font-family: Futura;
+}
+
+h1 {
+	font-weight:950;
+	font-size:5vw;
+}
+
+h2 {
+	font-weight:700;
+	font-style:italic;
+	font-size:3vw;
+}
+
+h3 {
+	font-weight:500;
+	font-size:2.5vw;
+}
+
+p {
+	font-size:2vw;
+}
+
+.bannerContainer {
     position: relative;
     text-align: center;
 }
@@ -62,12 +86,14 @@ export default {
     column-gap: 10%
 }
 
+
+
 @media only screen and (min-width: 1000px) {
     h1 {
       font-size:50px;
     }
 	h2 {
-		font-size:5px;
+		font-size:50px;
 	}
   }
 
