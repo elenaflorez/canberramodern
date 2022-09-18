@@ -7,10 +7,10 @@
 
 		<div class="building">
 			<!-- the buiding returns an array with one item in it, so need to reference it below -->
-			<h2>{{  event[0].content.rendered }}</h2>
+			<p>{{  event[0].content.rendered }}</p>
             <p>Using v-html directive: <span v-html="event[0].content.rendered"></span></p>
-            <h2>{{  event[0].acf.year }}</h2>
-            <h2>{{  event[0] }}</h2>
+            <p>{{  event[0].acf.year }}</p>
+            <p>{{  event[0] }}</p>
 
 			<!-- <ul>
 				<li>Address: {{  building[0].acf.location  }}</li>
