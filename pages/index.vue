@@ -8,6 +8,7 @@
           		<h2>Conservation through participation </h2>
         	</div>
     	</section>
+		<h2>Showcase Events</h2>
 		<section class = "eventsContainer">
 			<article>
 				<img class="eventImage" src="@/Images/Canberra Modern Presents 1.png" alt="Banner" />
@@ -22,6 +23,7 @@
 				<h2>Event 3</h2>
 			</article>
 		</section>
+		<h2>Showcase Buildings</h2>
 		<ShowcaseBuildings />
 
 	</div>
