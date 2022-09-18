@@ -10,7 +10,7 @@
 			<li v-for="building in buildings" :key="building.id" class="list-group-item">
 				<!-- now make a link for each item -->
 				<!-- <NuxtLink :to="building.slug"> -->
-				<NuxtLink :to="'/buildings/' + building.slug">
+				<NuxtLink class="pagelink" :to="'/buildings/' + building.slug">
 					<!-- return the rendered title -->
 					{{  building.title.rendered  }}
 				</NuxtLink>
@@ -18,8 +18,6 @@
 				: {{ building.acf.year }}
 			</li>
 		</ul>
-		<h3>this list is stored in components/BuildingsList.vue</h3>
-
 	</div>
 </template>
 
@@ -39,3 +37,16 @@ export default {
 	},
 }
 </script>
+
+<style>
+	.list-group-item {
+		background-color: #fae382;
+		color:white;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		
+	}
+	.pagelink {
+		color: white;
+		text-shadow: -1px -1px 0 #007bff, 1px -1px 0 #007bff, -1px 1px 0 #007bff, 1px 1px 0 #007bff;
+	}
+</style>

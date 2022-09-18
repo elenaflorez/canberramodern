@@ -1,9 +1,14 @@
 <template>
 	<div class="container">
-		<h2>All buildings</h2>
-		<h3>Filename: pages/buildings/index.vue</h3>
 
 		<SiteNavigation />
+		<header>
+			<h1>All Buildings</h1>
+		</header>
+
+		<section>
+			<figure><img class="quoteImage" src="@/Images/quote2.png" alt="Banner" /></figure> 
+		</section>
 
 
 		<div class="building">

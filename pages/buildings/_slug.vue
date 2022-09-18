@@ -7,7 +7,7 @@
 			<h2>{{ building[0].acf.year }}</h2>
 		</header>
 		<section class="buildingInfoContainer">
-			<article class="buildingInfo address">
+			<article class="address">
 				<h3>
 					Address:
 				</h3>
@@ -15,7 +15,7 @@
 					{{  building[0].acf.location  }}
 				</p>
 			</article>
-			<article class="buildingInfo suburb">
+			<article class="suburb">
 				<h3> 
 					Suburb:
 				</h3>
@@ -23,7 +23,7 @@
 					{{  building[0].acf.suburb  }}
 				</p>
 			</article>
-			<article class="buildingInfo architect">
+			<article class="architect">
 				<h3> 
 					Architect:
 				</h3>
@@ -130,7 +130,7 @@ export default {
 		/* justify-content: space-between; */
 	}
 	.address {
-		background-color: #eda384;
+		background-color: #999594;
 		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 		flex-grow:1;

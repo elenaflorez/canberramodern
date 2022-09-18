@@ -1,11 +1,12 @@
 <template>
 	<div class="container">
-		<h2>All events</h2>
-		<h3>Filename: pages/events/index.vue</h3>
-
 		<SiteNavigation />
-
-
+		<h1>
+			All Events
+		</h1>
+		<section>
+			<figure><img class="presentsImage" src="@/Images/Canberra Modern Presents 1.png" alt="Banner" /></figure> 
+		</section>
 		<div class="building">
 			<!-- The building list is over in the components folder -->
 			<!-- the code below loads the component here so we can use it again -->
@@ -37,4 +38,10 @@
 
 
 <style>
+	.presentsImage {
+		width:40%;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 </style>

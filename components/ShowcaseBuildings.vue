@@ -10,7 +10,7 @@
 			<li v-for="building in buildings" :key="building.id" class="list-group-item">
 				<!-- now make a link for each item -->
 				<!-- <NuxtLink :to="building.slug"> -->
-				<NuxtLink :to="'/buildings/' + building.slug">
+				<NuxtLink class="pagelink" :to="'/buildings/' + building.slug">
 					<!-- return the rendered title -->
 					{{  building.title.rendered  }}
 				</NuxtLink>

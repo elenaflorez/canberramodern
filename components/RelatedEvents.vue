@@ -10,7 +10,7 @@
 			<li v-for="event in events" :key="event.id" class="list-group-item">
 				<!-- now make a link for each item -->
 				<!-- <NuxtLink :to="building.slug"> -->
-				<NuxtLink :to="'/events/' + event.slug">
+				<NuxtLink class="pagelink" :to="'/events/' + event.slug">
 					<!-- return the rendered title -->
 					{{  event.title.rendered  }}
                     <!--{{event}}-->

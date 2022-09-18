@@ -41,6 +41,7 @@ export default {
 h1 {
 	font-weight:950;
 	font-size:5vw;
+	text-align:center;
 }
 
 h2 {

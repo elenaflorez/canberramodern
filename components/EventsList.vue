@@ -10,14 +10,13 @@
 			<li v-for="event in events" :key="event.id" class="list-group-item">
 				<!-- now make a link for each item -->
 				<!-- <NuxtLink :to="building.slug"> -->
-				<NuxtLink :to="'/events/' + event.slug">
+				<p><NuxtLink class="pagelink" :to="'/events/' + event.slug">
 					<!-- return the rendered title -->
 					{{  event.title.rendered  }}
-				</NuxtLink>
+				</NuxtLink></p>
+				<p>{{event.acf.date}}, {{event.acf.year}} - {{event.acf.time}}</p>
 			</li>
 		</ul>
-		<h3>this list is stored in components/BuildingsList.vue</h3>
-
 	</div>
 </template>
 
