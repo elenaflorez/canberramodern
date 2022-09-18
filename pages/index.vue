@@ -22,7 +22,7 @@
 				<h2>Event 3</h2>
 			</article>
 		</section>
-		<ShowcaseEvents />
+		<ShowcaseBuildings />
 
 	</div>
 </template>

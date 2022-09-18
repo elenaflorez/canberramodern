@@ -18,7 +18,6 @@
 				</NuxtLink>
 				<div>
 					<h4>{{event.content.rendered}}</h4>
-					<h4>{{event.content.rendered.p}}</h4>
 				</div>
 				<div class="htmlReturn" v-html="event.content.rendered"></div>
 			</li>
