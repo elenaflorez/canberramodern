@@ -2,18 +2,18 @@
 <!-- if we put it here we can avoid having to repeat the code -->
 <template>
 	<nav>
-  <NuxtLink to="/">
+    <p><NuxtLink class="blue" to="/">
       Home
-    </NuxtLink>
-    <NuxtLink to="/about">
+    </NuxtLink></p>
+    <p><NuxtLink class="yellow" to="/about">
       About
-    </NuxtLink>
-		<NuxtLink to="/buildings">
+    </NuxtLink></p>
+		<p><NuxtLink class="red" to="/buildings">
       Buildings
-    </NuxtLink>
-    <NuxtLink to="/events">
+    </NuxtLink></p>
+    <p><NuxtLink class="orange" to="/events">
       Events
-    </NuxtLink>
+    </NuxtLink></p>
 	</nav>
 </template>
 <script>
@@ -21,6 +21,33 @@
 </script>
 
 <!--You can put whatever you want down here to affect the styling of the nav-->
-<style>
+<style scoped>
+   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .blue {
+		color: #007bff;
+		text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
+	}
+  .yellow {
+		color: #eda384;
+		text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
+	}
+  .red {
+		color: #fae382;
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	}
+  .orange {
+		color: #f37175;
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	}
   
+  /*
+  link {
+    font-size:3vw;
+  }*/
+
 </style>

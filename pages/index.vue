@@ -4,8 +4,8 @@
 		<section class="bannerContainer">
         	<img class="bannerImage" src="@/Images/BannerImage.png" alt="Banner" />
         	<div class="bannerText">
-          		<h1>Canberra Modern</h1>
-          		<h2>Conservation through participation </h2>
+          		<h1 class="titleText">Canberra Modern</h1>
+          		<h2 class="titleText">Conservation through participation </h2>
         	</div>
     	</section>
 		<h2>Showcase Events</h2>
@@ -23,8 +23,8 @@
 				<h2>Event 3</h2>
 			</article>
 		</section>
-		<h2>Showcase Buildings</h2>
-		<ShowcaseBuildings />
+		<h2>Upcoming Events</h2>
+		<ShowcaseEvents />
 
 	</div>
 </template>
@@ -79,8 +79,12 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: rgba(0,0,0,0.5);
   font-size:6vw;
+}
+
+.titleText {
+	color:white;
 }
 
 .eventsContainer {
