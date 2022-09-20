@@ -15,6 +15,7 @@
 			<!-- this is a really useful line of code that will just output what the API call returns -->
 			<!-- <pre>{{ $data }}</pre> -->
 		</div>
+		<Social />
 	</div>
 </template>
 

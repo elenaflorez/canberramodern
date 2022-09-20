@@ -26,6 +26,8 @@
 		<h2>Upcoming Events</h2>
 		<ShowcaseEvents />
 
+		<Social />
+
 	</div>
 </template>
 

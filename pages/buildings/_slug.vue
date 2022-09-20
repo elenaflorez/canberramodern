@@ -78,7 +78,7 @@
 			</div>
 			
 			<section>
-				
+				<Social />
 			</section>
 		</section>
 
