@@ -5,6 +5,7 @@
 		<header>
 			<h1>{{  building[0].title.rendered  }}</h1>
 			<h2>{{ building[0].acf.year }}</h2>
+			<p>Risk Status: {{ building[0].acf.risk_status }}</p>
 		</header>
 		<section class="buildingInfoContainer">
 			<article class="address">
