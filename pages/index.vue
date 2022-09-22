@@ -11,16 +11,25 @@
 		<h2>Showcase Events</h2>
 		<section class = "eventsContainer">
 			<article>
-				<img class="eventImage" src="@/Images/Canberra Modern Presents 1.png" alt="Banner" />
-				<h2>Event 1</h2>
+				<NuxtLink class="pagelink" :to="'/events/gala-the-dressmaker-1950s-vintage-ball-at-the-nfsa'">
+					<img class="eventImage" src="@/Images/Canberra Modern Presents 1.png" alt="Banner" />
+					<p>Love to dress up? - The Dressmaker 1950s Vintage Ball at the NFSA</p>
+				</NuxtLink>
 			</article>
+			
+
 			<article>
-				<img class="eventImage" src="@/Images/Canberra Modern Presents 2.png" alt="Banner" />
-				<h2>Event 2</h2>
+				<NuxtLink class="pagelink" :to="'/cocktails-talk-martinis-at-manning-clark-house'">
+					<img class="eventImage" src="@/Images/Canberra Modern Presents 2.png" alt="Banner" />
+					<p>Love to go out? - Martinis at Manning Clark House</p>
+				</NuxtLink>
 			</article>
+
 			<article>
-				<img class="eventImage" src="@/Images/Canberra Modern Presents 3.png" alt="Banner" />
-				<h2>Event 3</h2>
+				<NuxtLink class="pagelink" :to="'/events/talk-australians-and-the-marimekko-mystique-1954-75'">
+					<img class="eventImage" src="@/Images/Canberra Modern Presents 3.png" alt="Banner" />
+					<p>Love history and design? - Australians and the Marimekko Mystique</p>
+				</NuxtLink>
 			</article>
 		</section>
 		<h2>Upcoming Events</h2>
@@ -44,7 +53,64 @@ export default {
 
 h1 {
 	font-weight:950;
+	font-size:6vw;
+	text-align:center;
+}
+
+h2 {
+	font-weight:700;
+	font-style:italic;
 	font-size:5vw;
+}
+
+h3 {
+	font-weight:500;
+	font-size:4vw;
+}
+
+p {
+	font-size:3vw;
+}
+
+.bannerContainer {
+    position: relative;
+    text-align: center;
+}
+
+.bannerImage {
+  width:100%
+}
+
+.eventImage {
+	width:30%;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.5);
+  font-size:6vw;
+}
+
+.titleText {
+	color:white;
+}
+
+.eventsContainer {
+	display: flex;
+    flex-direction:column; /*Reactive sizing for these columns */
+    /* column-gap: 10% */
+}
+
+@media only screen and (min-width: 800px) {
+    h1 {
+	font-weight:950;
+	font-size:4vw;
 	text-align:center;
 }
 
@@ -62,48 +128,15 @@ h3 {
 p {
 	font-size:2vw;
 }
-
-.bannerContainer {
-    position: relative;
-    text-align: center;
-}
-
-.bannerImage {
-  width:100%
-}
-
-.eventImage {
-	width:100%
-}
-
-.bannerText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0,0,0,0.5);
-  font-size:6vw;
-}
-
-.titleText {
-	color:white;
-}
-
 .eventsContainer {
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr; /*Reactive sizing for these columns */
     column-gap: 10%
 }
+.eventImage {
+	width:100%
+}
 
-
-
-@media only screen and (min-width: 1000px) {
-    h1 {
-      font-size:50px;
-    }
-	h2 {
-		font-size:50px;
-	}
   }
 
 </style>

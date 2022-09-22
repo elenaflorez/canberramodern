@@ -5,9 +5,9 @@
     <p><NuxtLink class="blue" to="/">
       Home
     </NuxtLink></p>
-    <p><NuxtLink class="yellow" to="/about">
+    <!-- <p><NuxtLink class="yellow" to="/about">
       About
-    </NuxtLink></p>
+    </NuxtLink></p> -->
 		<p><NuxtLink class="red" to="/buildings">
       Buildings
     </NuxtLink></p>
@@ -21,7 +21,7 @@
 </script>
 
 <!--You can put whatever you want down here to affect the styling of the nav-->
-<style scoped>
+<style>
    nav {
     display: flex;
     flex-direction: row;

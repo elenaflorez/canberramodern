@@ -10,12 +10,12 @@
 			<li v-for="building in buildings" :key="building.id" class="list-group-item">
 				<!-- now make a link for each item -->
 				<!-- <NuxtLink :to="building.slug"> -->
-				<NuxtLink class="pagelink" :to="'/buildings/' + building.slug">
+				<p><NuxtLink class="pagelink" :to="'/buildings/' + building.slug">
 					<!-- return the rendered title -->
 					{{  building.title.rendered  }}
 				</NuxtLink>
 				<!-- now show me the building year -->
-				: {{ building.acf.year }}
+				: {{ building.acf.year }}</p>
 			</li>
 		</ul>
 	</div>
