@@ -1,77 +1,36 @@
-# cbr-modern
+#Design
+The aim of the design was to create a more engaging and interesting website.
 
-This repo contains the bare-minimum you need to get started twith Vue/Nuxt.
+##Brighter Design
+The brief described that the design needed to draw on images and colours, as the period was a time of experimentation and pushing the boundaries. They also noted that they try to be accessible, digestible, and fun. The current website is not like this, largely bland and empty. 
 
-You will see that I load the buildings and content from the home page.
+I attempted to take the website in the opposite direction, taking the brand colours, fonts, and images, and creating a colorful and engaging website. I acknowledge its gaudy at times, and I probably would pare it back a bit in the final version, but it clearly makes a different personality statement for the brand. 
 
-## Build Setup
+##Call to action
+The brief noted that the motto is ‘Conservation through participation’, but the current website doesn’t have any attempt to incite interest or action. The copy was also a bit bland, very matter of fact and non conversational.I made the copy more inviting and inciting action, as shown in the showcased events on the main page, the ‘Dive in’ on each page. I also saw that the socials needed to be on each page and have a better call to action, rather than just the icons. 
 
-```bash
-# install dependencies
-$ yarn install
+##Connecting the website and showing buildings
+Another criticism of the current website is that it is highly segregated and separate, buildings aren’t linked together by period or style, architects aren’t linked to their other buildings’ and events aren’t connected to similar events or buildings/architects. To fix this I had relevant events and buildings and events on each page, and added much more information to the main page so people could find what caught their interest and be taken through to other relevant events. 
 
-# serve with hot reload at localhost:3000
-$ yarn dev
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+#Development Process
 
-# generate static project
-$ yarn generate
-```
+##Initial steps
+The development process for this website was challenging, figuring out how to use Vue’s components and links was a high initial learning curve. I found Ben’s repo instructive, and that gave me the basis to work with the basic components to build the website. 
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+##Finding feet and challenges
+Once I had the basics, I was able to make my own components and embed them in the pages. I created and updated the EventsList and the event pages, as well as the BuildingList and building pages. I also created some smaller components in RelevantEvents, RelevantBuildings, and the socials. With these I was able to create some functioning pages that fit with my desired design. 
 
-## Special Directories
+The major challenge was how to parse and interact with HTML returns from the API, as the other items were singular like ‘year’ the HTML was a set of different items that couldn’t be extracted individually. This limited my capability to style the event page for example, and to grab information from the other api’s like the about and partnerships page.
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+The other challenge was filtering page returns for lists like buildings and events, like filtering for buildings from the same architect, or similar events based on location. 
 
-### `assets`
+##Future improvements
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+Given the above challenges, there are a few improvements I didn’t get to make that I would have. 
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+First is an ‘About’ page that consolidated the about, partnerships, and history sections of the API. I noticed that the current website has too many pages to navigate through, and it would have been better served by a single consolidated about page with all that extra contextual information about the organisation. Given the challenges with parsing HTML returns I wasn’t able to implement this page. 
 
-### `components`
+Second is making the relevant events and buildings targeted to the current page, at the moment it doesn’t filter for similar events or relevant buildings, due to the filtering issue described above. 
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
-
-## Node version
-
-nvm install v16.15.0
-
+Finally would be the having the showcase events change based on the month, as at the moment they are pointing to a particular page rather than an API return. 
