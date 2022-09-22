@@ -52,11 +52,12 @@
 		<section class="diveIn">
 			<h2>Want to Dive In?</h2>
 			<p>Get involved with this historic landmark and others like it</p>
+
 			<div class="form">
 				<aside>
-				<img class="" src="@/Images/CM Diving Board.png" alt="Banner" />
-			</aside>
-			<article class="formContainer">
+					<img class="" src="@/Images/CM Diving Board.png" alt="Banner" />
+				</aside>
+			<article class="">
             <form>
                 <label for="fname"><p class="about_p">First name:</p></label>
                 <input type="text" id="fname" name="fname"><br>
@@ -77,11 +78,12 @@
               </form>
           </article>
 			</div>
+		</section>
 			
 			<section>
 				<Social />
 			</section>
-		</section>
+		
 
 		<!-- <div class="building"> -->
 			<!-- the buiding returns an array with one item in it, so need to reference it below -->
@@ -122,7 +124,7 @@ export default {
 	.buildingInfoContainer {
 		display: flex;
 		align-items: center;
-		flex-direction: row;
+		flex-direction: column;
 		text-align:center;
 		align-items: center;
 		padding-bottom:2%;
@@ -135,29 +137,33 @@ export default {
 		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 		flex-grow:1;
+		width:100%;
 	}
 	.suburb {
 		background-color: #7087c2;
 		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 		flex-grow:1;
+		width:100%;
 	}
 	.architect {
 		background-color: #f27075;
 		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 		flex-grow:1;
+		width:100%;
 	}
 	.diveIn {
 		padding-bottom:2%;
+		width:100%;
 	}
 	.formContainer {
 		display:grid;
 		grid-template-columns: 1fr 2fr;
 	}
 	.related {
-		display:grid;
-		grid-template-columns: 1fr 1fr;
+		display:flex;
+		flex-direction:column;
 		padding-bottom:2%
 	}
 	.quoteImage {
@@ -175,8 +181,24 @@ export default {
   		text-align:left;
 	}
 	.form {
+		display:flex;
+		flex-direction: column;
+	}
+
+	@media only screen and (min-width: 800px) {
+		.form {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 	}
+	.related {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		padding-bottom:2%
+	}
+	.buildingInfoContainer {
+		flex-direction:row;
+	}
+
+  }
 
 </style>

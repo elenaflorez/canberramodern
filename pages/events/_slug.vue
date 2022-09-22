@@ -109,7 +109,7 @@ export default {
 	.eventInfoContainer {
 		display: flex;
 		align-items: center;
-		flex-direction: row;
+		flex-direction: column;
 		text-align:center;
 		align-items: center;
 		padding-bottom:2%;
@@ -122,18 +122,22 @@ export default {
 		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 		flex-grow:1;
+		width:100%
 	}
 	.time {
 		background-color: #7087c2;
 		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 		flex-grow:1;
+		width:100%
+		
 	}
 	.year {
 		background-color: #f27075;
 		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 		flex-grow:1;
+		width:100%
 	}
 
 	.descripton :v-deep(p){
@@ -145,4 +149,11 @@ export default {
 	.image {
 
 	}
+
+	@media only screen and (min-width: 800px) {
+		.eventInfoContainer {
+			flex-direction:row;
+		}
+
+  }
 </style>
