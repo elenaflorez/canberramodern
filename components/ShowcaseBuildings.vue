@@ -15,8 +15,6 @@
 					{{  building.title.rendered  }}
 				</NuxtLink></p>
 				<p>{{building.acf.location}}</p>
-                <!-- <h4>{{building.content.rendered}}</h4>
-                <div class="htmlReturn" v-html="building.content.rendered"></div> -->
 			</li>
 		</ul>
 

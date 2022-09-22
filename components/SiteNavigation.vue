@@ -5,9 +5,6 @@
     <p><NuxtLink class="blue" to="/">
       Home
     </NuxtLink></p>
-    <!-- <p><NuxtLink class="yellow" to="/about">
-      About
-    </NuxtLink></p> -->
 		<p><NuxtLink class="red" to="/buildings">
       Buildings
     </NuxtLink></p>
@@ -44,10 +41,6 @@
 		color: #f37175;
 		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 	}
-  
-  /*
-  link {
-    font-size:3vw;
-  }*/
+
 
 </style>

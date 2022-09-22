@@ -7,7 +7,6 @@
 
 		<div class="page">
 			<!-- the buiding returns an array with one item in it, so need to reference it below -->
-			<!-- <h2>{{  page[0].title.rendered  }}</h2> -->
 
 			<pre>{{ $data }}</pre>
 			<h2>{{page[0].id}}</h2>

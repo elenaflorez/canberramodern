@@ -14,13 +14,6 @@
 					<!-- return the rendered title -->
 					{{  building.title.rendered  }}
 				</NuxtLink>
-				<!-- now show me the building year -->
-				<!-- : {{ building.acf.year }}
-                {{building}}
-                {{building.content.rendered}} -->
-                <!-- <div v-html="building.content.rendered"></div> -->
-                <!-- <h4>{{building.content.rendered}}</h4>
-                <div class="htmlReturn" v-html="building.content.rendered"></div> -->
 			</li>
 		</ul>
 

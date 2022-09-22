@@ -9,17 +9,10 @@
 			<!-- this is a for loop, it just loops through the list of buildings returned from the API -->
 			<li v-for="event in events" :key="event.id" class="list-group-item">
 				<!-- now make a link for each item -->
-				<!-- <NuxtLink :to="building.slug"> -->
 				<NuxtLink class="pagelink" :to="'/events/' + event.slug">
 					<!-- return the rendered title -->
 					{{  event.title.rendered  }}
-                    <!--{{event}}-->
-					
 				</NuxtLink>
-				<!-- <div>
-					<h4>{{event.content.rendered}}</h4>
-				</div> -->
-				<!-- <div class="htmlReturn" v-html="event.content.rendered"></div> -->
 			</li>
 		</ul>
 

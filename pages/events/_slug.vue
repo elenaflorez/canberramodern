@@ -35,9 +35,6 @@
 			<article>
 				<span class="descripton" v-html="event[0].content.rendered"></span>
 			</article>
-			<!-- <figure class="image">
-				<span v-html="event[0].content.rendered"></span>
-			</figure> -->
 		</section>
 		<section class="related">
 			<article>

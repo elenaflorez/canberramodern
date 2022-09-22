@@ -15,10 +15,6 @@
 					{{  event.title.rendered  }}
 				</NuxtLink></p>
 				<p>{{event.acf.date}}, {{event.acf.year}} - {{event.acf.time}}</p>
-				<!-- <div>
-					<h4>{{event.content.rendered}}</h4>
-				</div> -->
-				<!-- <div class="htmlReturn" v-html="event.content.rendered"></div> -->
 			</li>
 		</ul>
 

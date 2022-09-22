@@ -83,20 +83,6 @@
 			<section>
 				<Social />
 			</section>
-		
-
-		<!-- <div class="building"> -->
-			<!-- the buiding returns an array with one item in it, so need to reference it below -->
-			<!-- <h2>{{  building[0].title.rendered  }}</h2>
-
-			<ul>
-				<li>Address: {{  building[0].acf.location  }}</li>
-				<li>Suburb: {{  building[0].acf.suburb  }}</li>
-				<li>Architect: {{  building[0].acf.architect[0].name  }}</li>
-			</ul> -->
-			<!-- <pre>{{ $data }}</pre> -->
-			<!-- {{building[0]}}
-		</div> -->
 	</div>
 </template>
 
@@ -128,9 +114,6 @@ export default {
 		text-align:center;
 		align-items: center;
 		padding-bottom:2%;
-		/* flex-grow:1;
-		width:100%; */
-		/* justify-content: space-between; */
 	}
 	.address {
 		background-color: #999594;
