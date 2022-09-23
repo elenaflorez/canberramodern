@@ -19,7 +19,7 @@
 			
 
 			<article>
-				<NuxtLink class="pagelink" :to="'/cocktails-talk-martinis-at-manning-clark-house'">
+				<NuxtLink class="pagelink" :to="'/events/cocktails-talk-martinis-at-manning-clark-house'">
 					<img class="eventImage" src="@/Images/Canberra Modern Presents 2.png" alt="Banner" />
 					<p>Love to go out? - Martinis at Manning Clark House</p>
 				</NuxtLink>
