@@ -1,5 +1,8 @@
 #Design
-The aim of the design was to create a more engaging and interesting website.
+The aim of the design was to create a more engaging and interesting website, to invite participation and have multiple points of engagement and interest for users. The website needs to be inviting and fun to create interest to attend events. 
+
+![Initial Design](Initial Design.jpg)
+The initial design was focused on having more images and showcased events, as further described below. 
 
 ##Brighter Design
 The brief described that the design needed to draw on images and colours, as the period was a time of experimentation and pushing the boundaries. They also noted that they try to be accessible, digestible, and fun. The current website is not like this, largely bland and empty. 
