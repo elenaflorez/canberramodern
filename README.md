@@ -34,6 +34,8 @@ The major challenge was how to parse and interact with HTML returns from the API
 
 The other challenge was filtering page returns for lists like buildings and events, like filtering for buildings from the same architect, or similar events based on location. 
 
+Finally I styled the site to respond to different screen sizes. I found that tablet and desktop could use the same structure given the text and image sizing was done by percentage and view width. But for mobile and smaller tablets I needed to change the website structure and grids to suit.  
+
 ## Future improvements
 
 Given the above challenges, there are a few improvements I didn’t get to make that I would have. 
