@@ -1,10 +1,10 @@
 <template>
     <div class="linkContainer">
         <p>Hear more from us and get involved</p> 
-        <a href="https://www.instagram.com/canberra_modern/">
+        <a href="https://www.instagram.com/museumsvictoria/?hl=en">
             <img class="iLink" src="@/Images/Instagram Image.png" alt="Banner" /> 
         </a>
-        <a href="https://www.facebook.com/canberramodern/">
+        <a href="https://www.facebook.com/museumvictoria/">
             <img class="fbLink" src="@/Images/Facebook Icon.png" alt="Banner" /> 
         </a>
     </div>

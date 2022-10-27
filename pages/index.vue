@@ -8,6 +8,22 @@
           		<h2 class="titleText">Conservation through participation </h2>
         	</div>
     	</section>
+
+		<!-- START TESTING -->
+		<!-- <EventbyYear /> THIS WORKS AND ITS GOOD -->
+
+		<!-- <input type="text" placeholder="Search" class="search-input" v-model="searchValue"/>
+		{{ searchValue }} -->
+		
+		<!-- <h4>TESTING FIELD</h4>
+		<TestingSearch /> -->
+
+		<h4>TESTING SEARCH</h4>
+		<TestingSearchCombo />
+
+		<!-- <TestingSpecies /> -->
+
+		<!-- END TESTING -->
 		<h2>Showcase Events</h2>
 		<section class = "eventsContainer">
 			<article>
@@ -41,12 +57,24 @@
 </template>
 
 <script>
+import TestingSearchCombo from '../components/TestingSearchCombo.vue';
 export default {
-	name: 'IndexPage'
+    name: "IndexPage",
+    data: () => ({
+        searchValue: "",
+    }),
+    components: { TestingSearchCombo }
 }
 </script>
 
 <style>
+/* TESTING */
+.search-input {
+	width: 200px; 
+	height:30px;
+	border-radius: 2px;
+}
+/* END TESTING */
 * {
 	font-family: Futura;
 }
